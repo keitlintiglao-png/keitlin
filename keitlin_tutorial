@@ -1,0 +1,161 @@
+print("=" * 40)
+print("       PYTHON TUTORIAL")
+print("=" * 40)
+
+name = input("Enter your name: ")
+
+print("\nHello,", name + "!")
+print("Welcome to your Python Learning Program!")
+
+def main_menu():
+    print("\n========== MAIN MENU ==========")
+    print("[1] Introduction to Programming")
+    print("[2] Basic Syntax")
+    print("[3] Printing Output")
+    print("[4] Python Comments")
+    print("[5] Variables and Data Types")
+    print("[6] Basic Data Types")
+    print("[7] Arithmetic Operators")
+    print("[8] Basic Input and Output")
+    print("[9] Conditional Statements")
+    print("[10] Logical Operators")
+    print("[11] Loops")
+    print("[0] Exit")
+    print("===============================")
+
+while True:
+
+    main_menu()
+
+    choice = input("\nChoose a lesson: ")
+
+    if choice == "1":
+        print("\nLESSON 1: INTRODUCTION TO PROGRAMMING")
+        print("Programming is the process of giving")
+        print("instructions to a computer.")
+        print("Python is a programming language created")
+        print("by Guido van Rossum.")
+
+    elif choice == "2":
+        print("\nLESSON 2: BASIC SYNTAX")
+        print("Syntax refers to the rules of writing code.")
+        print("Python is case-sensitive.")
+        print("It also uses indentation to organize code.")
+        print("\nExample:")
+        print('name = "Alex"')
+        print("print(name)")
+
+    elif choice == "3":
+        print("\nLESSON 3: PRINTING OUTPUT")
+        print("The print() function displays information.")
+        print("\nExample:")
+        print('print("Hello World!")')
+        print("\nOUTPUT:")
+        print("Hello World!")
+
+    elif choice == "4":
+        print("\nLESSON 4: PYTHON COMMENTS")
+        print("Comments are notes written inside a program.")
+        print("Python ignores comments when running code.")
+        print("\nExample:")
+        print("# This is a comment")
+        print('print("Hello")')
+
+    elif choice == "5":
+        print("\nLESSON 5: VARIABLES")
+        print("Variables are used to store information.")
+        print("\nExample:")
+        print('name = "Alex"')
+        print("age = 18")
+        print("print(name)")
+        print("\nOUTPUT:")
+        print("Alex")
+
+    elif choice == "6":
+        print("\nLESSON 6: BASIC DATA TYPES")
+        print("Python has different types of data.")
+        print("\nString - used for text")
+        print("Integer - used for whole numbers")
+        print("Float - used for decimal numbers")
+        print("Boolean - represents True or False")
+        print("\nExample:")
+        print('name = "Alex"')
+        print("age = 18")
+        print("height = 5.5")
+        print("is_student = True")
+
+    elif choice == "7":
+        print("\nLESSON 7: ARITHMETIC OPERATORS")
+        print("Arithmetic operators are used for calculations.")
+        print("\nAddition:       +")
+        print("Subtraction:      -")
+        print("Multiplication:   *")
+        print("Division:         /")
+        print("Modulus:          %")
+        print("\nExample:")
+        print("print(10 + 5)")
+        print("\nOUTPUT:")
+        print(10 + 5)
+
+    elif choice == "8":
+
+        print("\nLESSON 8: BASIC INPUT AND OUTPUT")
+        print("The input() function allows users to enter data.")
+        print("\nExample:")
+        print('user_name = input("Enter your name: ")')
+        print("print(user_name)")
+        print("\nTRY IT YOURSELF:")
+
+        user_name = input("Enter your name: ")
+
+        print("Hello,", user_name)
+
+    elif choice == "9":
+        print("\nLESSON 9: CONDITIONAL STATEMENTS")
+        print("Conditional statements allow programs")
+        print("to make decisions using conditions.")
+        print("\nExample:")
+        print("age = 18")
+        print("if age >= 18:")
+        print('    print("Adult")')
+        print("else:")
+        print('    print("Minor")')
+        print("\nOUTPUT:")
+        print("Adult")
+
+    elif choice == "10":
+        print("\nLESSON 10: LOGICAL OPERATORS")
+        print("Logical operators combine conditions.")
+        print("\nAND - both conditions must be True.")
+        print("OR - at least one condition must be True.")
+        print("NOT - reverses the result.")
+        print("\nExample:")
+        print("age = 18")
+        print("has_id = True")
+        print("if age >= 18 and has_id:")
+        print('    print("Allowed")')
+
+    elif choice == "11":
+        print("\nLESSON 11: LOOPS")
+        print("Loops repeat a set of instructions.")
+        print("\nThere are two common types of loops:")
+        print("1. For Loop")
+        print("2. While Loop")
+        print("\nExample:")
+        print("for number in range(1, 4):")
+        print("    print(number)")
+        print("\nOUTPUT:")
+        print("1")
+        print("2")
+        print("3")
+
+    elif choice == "0":
+        print("\nThank you for using Python Tutorial!")
+        print("Keep learning,", name + "!")
+        break
+
+    else:
+        print("\nInvalid choice! Please choose from 0 to 11.")
+
+    input("\nPress Enter to return to the main menu...")
+
